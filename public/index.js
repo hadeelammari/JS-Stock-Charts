@@ -8,18 +8,21 @@ async function main() {
     let result = await response.json();
     console.log(result)
 
-    let GME = result.GME
-    let MSFT = result.MSFT
-    let DIS = result.DIS
-    let BTNX = result.BTNX
+    // let GME = result.GME
+    // let MSFT = result.MSFT
+    // let DIS = result.DIS
+    // let BTNX = result.BTNX
 
-    const stocks = [GME, MSFT, DIS, BNTX];
+    // const stocks = [GME, MSFT, DIS, BTNX ];
 
 // Bonus Note: 
 // Another way to write the above lines would to refactor it as:
-   // const {GME, MSFT, DIS, BTNX} = result 
+    const {GME, MSFT, DIS, BTNX} = mockData; 
 // This is an example of "destructuring" an object
 // "Destructuring" creates new variables from an object or an array
+    const stocks = [GME, MSFT, DIS, BTNX ];
+    
+    console.log (Chart)
 }
 
 // const timeChartCanvas = document.getElementById('time-chart').getContext('2d')
